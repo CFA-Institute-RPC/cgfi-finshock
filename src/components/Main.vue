@@ -29,6 +29,7 @@ onMounted(async () => {
 .main {
 	display: flex;
 	flex-direction: row;
+	padding-bottom: $gap;
 
 	#chart {
 		flex: 1 1 70%;

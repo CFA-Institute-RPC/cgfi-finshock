@@ -712,6 +712,9 @@ onMounted(() => {
 				cursor: pointer;
 			}
 		}
+		path.line {
+			cursor: pointer;
+		}
 	}
 
 	.spacer {

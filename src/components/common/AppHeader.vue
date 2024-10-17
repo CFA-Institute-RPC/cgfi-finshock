@@ -19,7 +19,10 @@ const startTutorial = () => {
 
 <template>
 	<header>
-		<h1>{{ $l.title }}</h1>
+		<div class="title">
+			<img src="@/assets/img/cgfi-logo.png" />
+			<h1>{{ $l.title }}</h1>
+		</div>
 		<button @click="startTutorial">{{ $l.tutorial }}</button>
 		<!-- <div id="header-menu">
 			<router-link :to="{ name: 'Main' }">{{ $l.main }}</router-link>
@@ -37,6 +40,19 @@ header {
 	background-color: $bgContrast;
 	margin-bottom: $gap;
 	justify-content: space-between;
+
+	.title {
+		display: flex;
+		align-items: center;
+		margin-left: $gap;
+		img {
+			height: $headerHeight - $gap;
+			margin-right: 2rem;
+		}
+		h1 {
+			margin-left: $gap;
+		}
+	}
 
 	button {
 		margin-top: 0.125rem;

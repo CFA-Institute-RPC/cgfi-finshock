@@ -43,7 +43,7 @@ export const getTutorial = (
 		intro.push({
 			id: 'intro',
 			title: 'Welcome!',
-			text: 'This Network Reevaluation Model is a tool for visualizing and analyzing shocks to financial networks. If you are new to the model, we recommend you follow this intro to learn how to use it.',
+			text: '<p>This Network Reevaluation Model is a tool for visualizing and analyzing shocks to financial networks. If you are new to the model, we recommend you follow this intro to learn how to use it.</p><p>This tool is based on the work done in the paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4905653" target="_blank">Financial network valuation under climate transition risk</a></p>',
 			cancelIcon: {
 				enabled: true,
 			},
@@ -100,7 +100,7 @@ export const getTutorial = (
 		{
 			id: 'liabilities1',
 			title: 'Liabilities',
-			text: 'The arrows in the graph represent liabilities between banks - e.g. interbank loans. The width of the arrow represents the amount of the liability. The colour of the arrow represents the bank that owes the money. For example, this arrow represents a liability from blue to yellow - i.e. the blue bank owes money to the yellow bank.',
+			text: 'The arrows in the graph represent liabilities between banks - e.g. interbank loans. The width of the arrow represents the amount of the liability. The colour of the arrow represents the bank that owes the money. For example, this arrow represents a liability from the blue bank (Bank 0) to the yellow one (Bank 1) - i.e. bank 0 owes money to bank 1.',
 			attachTo: {
 				element: '#graph .chord.highlight',
 				on: 'bottom',
@@ -325,7 +325,7 @@ export const getTutorial = (
 		{
 			id: 'value2',
 			title: 'Valuation function',
-			text: 'The effective value of a bank can be seen here, alongside the equity associated with that bank.',
+			text: "The effective value of a bank can be seen here, alongside the equity associated with that bank. The valuation function can be interpreted as a measure of a bank's probability of default. The smaller the valuation function, the higher the likelihood the bank is in default.",
 			attachTo: {
 				element: '.control.info',
 				on: 'left',
