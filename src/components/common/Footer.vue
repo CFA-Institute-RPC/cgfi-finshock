@@ -17,8 +17,8 @@
 		<a target="_blank" href="https://cgfi.ac.uk"
 			><img src="@/assets/img/cgfi-logo.png"
 		/></a>
-		<a target="_blank" href="https://rpc.cfainstitute.org/en/"
-			><img src="@/assets/img/cfa-logo-rpc.png"
+		<a target="_blank" href="https://www.cfainstitute.org/"
+			><img src="@/assets/img/cfa-logo.png"
 		/></a>
 		<!-- <a target="_blank" href="https://reading.ac.uk"
 			><img src="@/assets/img/reading-logo.png"
