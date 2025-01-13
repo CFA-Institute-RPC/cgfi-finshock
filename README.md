@@ -71,7 +71,7 @@ This project is supported by the [UK Centre for Greening Finance and Investment 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/CFA-Institute-RPC/cgfi-finshock/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/CFA-Institute-RPC/cgfi-finshock/blob/master/LICENSE.txt) file for details.
 
 ---
 
