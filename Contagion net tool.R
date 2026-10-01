@@ -51,7 +51,7 @@ BlackCox <- function(ExtA, OE2, R, vol, maturity){
   Val <- ifelse(Lev >= 1, 1,
                ifelse(Lev >= 0 & Lev < 1,
                pnorm((log(1/(1-Lev)) - vol^2*maturity/2)/(vol*maturity^0.5))
-               - (1/(1-Lev))*pnorm((-log(1/(1-Lev)) - vol^2*maturity)/(vol*maturity^0.5)), 
+               - (1/(1-Lev))*pnorm((-log(1/(1-Lev)) - vol^2*maturity/2)/(vol*maturity^0.5)),
                0))
   return(1-R*(1-Val))
 }

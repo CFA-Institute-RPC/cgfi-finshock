@@ -22,7 +22,7 @@ const labelsEn = {
 	valueFunc: 'Valuation function',
 	equityIs: 'Equity',
 	valueIs: 'Valuation',
-	recoveryRate: 'Recovery rate',
+	recoveryRate: 'Loss given default (LGD)',
 	alphabeta: 'α, β',
 	volatility: 'Volatility',
 	maturity: 'Time to Maturity',

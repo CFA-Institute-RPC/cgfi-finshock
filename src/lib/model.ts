@@ -201,7 +201,7 @@ function blackVal(
 	const val = new Array<number>(OE2.length)
 	for (let i = 0; i < OE2.length; i++) {
 		const levi = OE2[i] / (ExtA[i] - X[i])
-		if (levi > 1) {
+		if (levi >= 1) {
 			val[i] = 1
 		} else if (levi >= 0 && levi < 1) {
 			const part1 = normalCDF(
@@ -211,7 +211,7 @@ function blackVal(
 			const part2 =
 				(1 / (1 - levi)) *
 				normalCDF(
-					(-Math.log(1 / (1 - levi)) - vol * vol * maturity) /
+					(-Math.log(1 / (1 - levi)) - (vol * vol * maturity) / 2) /
 						(vol * Math.sqrt(maturity)),
 				)
 			val[i] = 1 - R * (1 - part1 + part2)

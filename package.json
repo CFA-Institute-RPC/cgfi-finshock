@@ -5,7 +5,8 @@
 	"scripts": {
 		"dev": "vite --config vite.config.ts",
 		"build": "vue-tsc --noEmit --project ./ && vite --config vite.config.ts build",
-		"deploy": "npm run build && rm -Rf docs/assets && cp -r dist/* docs && cp dist/index.html docs/404.html && git add docs"
+		"deploy": "npm run build && rm -Rf docs/assets && cp -r dist/* docs && cp dist/index.html docs/404.html && git add docs",
+		"test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/model.test.mjs"
 	},
 	"author": "Guy Griffiths",
 	"license": "ISC",
